@@ -5,78 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Startng Task: My Resume</title>
+
+    <style>
+
+        body {
+            color: #6D5D4B;
+            line-height: 1.6;
+        }
+        header {
+            color: #fff;
+            background-color: #5BB6EE;
+            font-size: 1rem;
+            font-weight: bold;
+            padding-left: 2rem;
+            padding-top: .2rem;
+            padding-bottom: .2rem;
+        }
+        ul {
+            list-style-type: square;
+            margin-left: 1rem;
+        }
+        p {
+            margin-left: 1.2rem;
+        }
+        .heading {
+            width: 50%;
+            padding: 0 5rem .5rem 15rem;
+            position: relative;
+        }   
+        .img {
+            display: block;
+            margin-left: 5rem;
+            padding: 7px;
+            background-color: #5BB6EE;
+        
+            border-radius: 10%;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .inline {
+            display: inline-block;
+        }
+        .margin {
+            margin-left: 10rem;
+        }
+        .bullet {
+            list-style-type: none;   
+        }
+        .bg {
+            background-color: #5BB6EE;
+            padding-left: 2rem;
+            padding-top: .3rem;
+            padding-bottom: .3rem;
+        }
+    
+    </style>
 </head>
 <body>
     <!--My resume heading -->
-    <center>
-        <table>
-            <tr>
-                <td>
-                    <h2>Lateef Olanrewaju RAJI</h1>
-                    <h4>23, Balogun Street, Mokola, Ibadan, Oyo State</h4>
-                    <h4>08105757339 | rajilat1000@gmail.com |</h4>
-                    <h4>Date of Birth: 25th January, 1997</h4>
-                </td>
-                <td>
-                    <img src="https://res.cloudinary.com/rajilat1000/image/upload/v1566508068/IMG_20171205_135018_vdpoes.jpg" width="200" height="200">
-                </td>
-            </tr>
-        </table>
-    </center>
-    <br/>
+    <div class="heading">
+        <h1 class="bg">Lateef Olanrewaju RAJI</h1>
+        <h4 class="bg">23, Balogun Street, Mokola, Ibadan, Oyo State</h4>
+        <h4 class="bg">08105757339 | rajilat1000@gmail.com |</h4>
+        <h4 class="bg">Date of Birth: 25th January, 1997</h4>
+        <img src="https://res.cloudinary.com/rajilat1000/image/upload/v1566508068/IMG_20171205_135018_vdpoes.jpg" width="230"   height="230" class="img" alt="My Image">
+    </div>
     <!--My resume statement, skiil, activites and certification -->
     <div>
-        <header><b>PERSONAL STATEMENT</b></header>
+        <header>PERSONAL STATEMENT</header>
         <hr/>
         <p>From studying chemistry as an Undergraduate I ventured into web technologies due to the revolution towards IT oriented world which I choose to exploit. I am passionate about modelling a unique UI features to provide end users with the best User Experience. I am also seeking for an opportunity to further develop my existing skills in a fast paced environment.</p>
-        <header><b>SKILLS</b></header>
+        <header>SKILLS</header>
         <hr/>
         <ul>
             <li>
                 <b>Skills:</b> HTML, CSS, JAVASCRIPT, REACT.JS, CorelDRAW, and Microsoft Office Suite. Developed series of children books and novels using CorelDRAW.
             </li>
-            <br/>
             <li>
                 <b>Fast Learner:</b> got myself familiar with most of this applications by constant tutoring and self-learning via online learning platforms.
             </li>
-            <br/>
             <li>
                 <b>Final Year Undergraduate Project Work:</b> solved a major environmental pollution problem with Adsorption of dye using modified and unmodified Almond seed coat (Prunus Amygdalus).
             </li>
-            <br/>
             <li>
                 <b>Administrative Support:</b> I provide administrative support for the accounting department in Transmission Company of Nigeria by keeping records of activities using Microsoft Office Suite.
             </li>
         </ul>
-        <br/>
         <header><b>EDUCATION</b></header>
         <hr/>
-        <h3>University of Ilorin, Ilorin, NG.</h3>
-        <p>Bachelor of Science.</p>
-        <p>Major: Chemistry.</p>
-        <p>Year of Graduation: September, 2018.</p>
-        <h3>Olak Communications</h3>
-        <p>Diploma Certificate in Computer Appreciation and Desktop publishing.</p>
-        <p>Year of Graduation: August, 2012.</p>
-        <br/>
-        <header><b>ACTIVITIES/PROJECTS</b></header>
+        <div class="inline">
+            <ul class="bullet">
+                <li><b>&raquo;&nbsp;&nbsp;University of Ilorin, Ilorin, Nigeria</b></li>
+                <li>&raquo;&nbsp;&nbsp;B.Sc Chemistry</li>
+                <li>&raquo;&nbsp;&nbsp;Year of Graduation: September, 2018.</li>
+            </ul>
+        </div>
+        <div class="inline margin">
+            <ul class="bullet">
+                <li><b>&raquo;&nbsp;&nbsp;Olak Communications</b></li>
+                <li>&raquo;&nbsp;&nbsp;Diploma Certificate in Computer Appreciation and Desktop publishing.</li>
+                <li>&raquo;&nbsp;&nbsp;Year of Graduation: August, 2012.</li>
+            </ul>
+        </div>
+        <header>ACTIVITIES/PROJECTS</header>
         <hr/>
-        <h4>Wicecom Publishers: served as an administrative assistant and a graphics designer in the publishing firm. Being involved in series of book development and publishing.</h4>
-        <h4>Projects: I have used some of the latest technologies to develop the following applications:</h4>
-        <ul>
-            <li>Dainty-Events: It’s a prototype application for an event planner.</li>
-            <br/>
-            <li>Other projects includes: budgety, natour, Trillo, and nexter app</li>
-        </ul>
-        <p><b>The aforementioned project list can be found on my git-hub page; github.com/Lanre039</b></p>
-        <br/>
-        <header><b>CERTIFICATIONS</b></header>
+        <div>
+            <p><b>&raquo;&nbsp;&nbsp;Wicecom Publishers:</b> served as an administrative assistant and a graphics designer in the publishing firm. Being involved in series of book development and publishing.</p>
+            <p><b>&raquo;&nbsp;&nbsp;Projects:</b> I have used some of the latest technologies to develop the following applications:</p>
+            <ul>
+                <li>Dainty-Events: it’s a prototype application for an event planner.</li>
+                <li>Other projects includes: budgety, natour, Trillo, and nexter app</li>
+            </ul>
+            <p><b>The aforementioned project list can be found on my git-hub page; github.com/Lanre039</b></p>
+        </div>
+        
+        <header>CERTIFICATIONS</header>
         <hr/>
         <ul>
             <li>Javascript course master by Jonas Schmedtmann on Udemy online course</li>
-            <br/>
-            <li>Advanced CSS (SASS) by Jonas Schmedtmann on Udemy online course    </li>
-            <br/>
+            <li>Advanced CSS (SASS) by Jonas Schmedtmann on Udemy online course</li>
             <li>Certificate of National service (10/2018 – present)</li>
         </ul>
     </div>

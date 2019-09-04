@@ -4,71 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
     <title>Startng Task: My Resume</title>
 
-    <style>
-
-        body {
-            color: #6D5D4B;
-            line-height: 1.6;
-        }
-        header {
-            color: #fff;
-            background-color: #5BB6EE;
-            font-size: 1rem;
-            font-weight: bold;
-            padding-left: 2rem;
-            padding-top: .2rem;
-            padding-bottom: .2rem;
-        }
-        ul {
-            list-style-type: square;
-            margin-left: 1rem;
-        }
-        p {
-            margin-left: 1.2rem;
-        }
-        .heading {
-            width: 50%;
-            padding: 0 5rem .5rem 15rem;
-            position: relative;
-        }   
-        .img {
-            display: block;
-            margin-left: 5rem;
-            padding: 7px;
-            background-color: #5BB6EE;
-        
-            border-radius: 10%;
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-        .inline {
-            display: inline-block;
-        }
-        .margin {
-            margin-left: 10rem;
-        }
-        .bullet {
-            list-style-type: none;   
-        }
-        .bg {
-            background-color: #5BB6EE;
-            padding-left: 2rem;
-            padding-top: .3rem;
-            padding-bottom: .3rem;
-        }
-    
-    </style>
 </head>
 <body>
     <!--My resume heading -->
-    <div class="heading">
+    <div class="heading" id="heading">
         <h1 class="bg">Lateef Olanrewaju RAJI</h1>
         <h4 class="bg">23, Balogun Street, Mokola, Ibadan, Oyo State</h4>
         <h4 class="bg">08105757339 | rajilat1000@gmail.com |</h4>
         <h4 class="bg">Date of Birth: 25th January, 1997</h4>
+        <a href="#contact-me" class="contact-me">Contact me here</a>
         <img src="https://res.cloudinary.com/rajilat1000/image/upload/v1566508068/IMG_20171205_135018_vdpoes.jpg" width="230"   height="230" class="img" alt="My Image">
     </div>
     <!--My resume statement, skiil, activites and certification -->
@@ -128,5 +75,34 @@
             <li>Certificate of National service (10/2018 – present)</li>
         </ul>
     </div>
+    <div class="popup__content" id="contact-me">
+            <form action="" name="myForm" method="" onsubmit="handleSubmit()">
+                <div class="">
+                    <h1 class="heading__1">Looking to hire?</h1>
+                    <h2 class="heading__2">Kindly fill the form below, I'm available for you!</h2>
+                </div>
+            
+                <div class="form__group">
+                    <input name="name" type="text" class="form__input" placeholder="First name" id="name" required minlength="4">
+                    <label for="name" class="form__label">First name</label>
+                </div>
+            
+                <div class="form__group">
+                    <input name="email" type="email" class="form__input" placeholder="Email address" id="email" required>
+                    <label for="email" class="form__label">Email address</label>
+                </div>
+                <div class="form__group">
+                    <input name="title" type="title" class="form__input" placeholder="Title"  required>
+                    <label for="email" class="form__label">Title</label>
+                </div>
+            
+                <div class="form__group">            
+                    <textarea name="message" rows="8" class="form__input" placeholder="Drop your message..."  required minlength="20"></textarea>
+                </div>
+                <button type="submit" class="form__button">Submit</button>  
+            </form>
+            <a href="#heading">Back to top &uarr;</a>
+        </div>
+        <script src="./script.js"></script>
 </body>
 </html>

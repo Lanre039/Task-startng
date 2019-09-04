@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Startng Task: My Resume</title>
+
+</head>
+<body>
+    <!--My resume heading -->
+    <div class="heading" id="heading">
+        <h1 class="bg">Lateef Olanrewaju RAJI</h1>
+        <h4 class="bg">23, Balogun Street, Mokola, Ibadan, Oyo State</h4>
+        <h4 class="bg">08105757339 | rajilat1000@gmail.com |</h4>
+        <h4 class="bg">Date of Birth: 25th January, 1997</h4>
+        <a href="#contact-me" class="contact-me">Contact me here</a>
+        <img src="https://res.cloudinary.com/rajilat1000/image/upload/v1566508068/IMG_20171205_135018_vdpoes.jpg" width="230"   height="230" class="img" alt="My Image">
+    </div>
+    <!--My resume statement, skiil, activites and certification -->
+    <div>
+        <header>PERSONAL STATEMENT</header>
+        <hr/>
+        <p>From studying chemistry as an Undergraduate I ventured into web technologies due to the revolution towards IT oriented world which I choose to exploit. I am passionate about modelling a unique UI features to provide end users with the best User Experience. I am also seeking for an opportunity to further develop my existing skills in a fast paced environment.</p>
+        <header>SKILLS</header>
+        <hr/>
+        <ul>
+            <li>
+                <b>Skills:</b> HTML, CSS, JAVASCRIPT, REACT.JS, CorelDRAW, and Microsoft Office Suite. Developed series of children books and novels using CorelDRAW.
+            </li>
+            <li>
+                <b>Fast Learner:</b> got myself familiar with most of this applications by constant tutoring and self-learning via online learning platforms.
+            </li>
+            <li>
+                <b>Final Year Undergraduate Project Work:</b> solved a major environmental pollution problem with Adsorption of dye using modified and unmodified Almond seed coat (Prunus Amygdalus).
+            </li>
+            <li>
+                <b>Administrative Support:</b> I provide administrative support for the accounting department in Transmission Company of Nigeria by keeping records of activities using Microsoft Office Suite.
+            </li>
+        </ul>
+        <header><b>EDUCATION</b></header>
+        <hr/>
+        <div class="inline">
+            <ul class="bullet">
+                <li><b>&raquo;&nbsp;&nbsp;University of Ilorin, Ilorin, Nigeria</b></li>
+                <li>&raquo;&nbsp;&nbsp;B.Sc Chemistry</li>
+                <li>&raquo;&nbsp;&nbsp;Year of Graduation: September, 2018.</li>
+            </ul>
+        </div>
+        <div class="inline margin">
+            <ul class="bullet">
+                <li><b>&raquo;&nbsp;&nbsp;Olak Communications</b></li>
+                <li>&raquo;&nbsp;&nbsp;Diploma Certificate in Computer Appreciation and Desktop publishing.</li>
+                <li>&raquo;&nbsp;&nbsp;Year of Graduation: August, 2012.</li>
+            </ul>
+        </div>
+        <header>ACTIVITIES/PROJECTS</header>
+        <hr/>
+        <div>
+            <p><b>&raquo;&nbsp;&nbsp;Wicecom Publishers:</b> served as an administrative assistant and a graphics designer in the publishing firm. Being involved in series of book development and publishing.</p>
+            <p><b>&raquo;&nbsp;&nbsp;Projects:</b> I have used some of the latest technologies to develop the following applications:</p>
+            <ul>
+                <li>Dainty-Events: it’s a prototype application for an event planner.</li>
+                <li>Other projects includes: budgety, natour, Trillo, and nexter app</li>
+            </ul>
+            <p><b>The aforementioned project list can be found on my git-hub page; github.com/Lanre039</b></p>
+        </div>
+        
+        <header>CERTIFICATIONS</header>
+        <hr/>
+        <ul>
+            <li>Javascript course master by Jonas Schmedtmann on Udemy online course</li>
+            <li>Advanced CSS (SASS) by Jonas Schmedtmann on Udemy online course</li>
+            <li>Certificate of National service (10/2018 – present)</li>
+        </ul>
+    </div>
+    <div class="popup__content" id="contact-me">
+            <form action="" name="myForm" method="" onsubmit="handleSubmit()">
+                <div class="">
+                    <h1 class="heading__1">Looking to hire?</h1>
+                    <h2 class="heading__2">Kindly fill the form below, I'm available for you!</h2>
+                </div>
+            
+                <div class="form__group">
+                    <input name="name" type="text" class="form__input" placeholder="First name" id="name" required minlength="4">
+                    <label for="name" class="form__label">First name</label>
+                </div>
+            
+                <div class="form__group">
+                    <input name="email" type="email" class="form__input" placeholder="Email address" id="email" required>
+                    <label for="email" class="form__label">Email address</label>
+                </div>
+                <div class="form__group">
+                    <input name="title" type="title" class="form__input" placeholder="Title"  required>
+                    <label for="email" class="form__label">Title</label>
+                </div>
+            
+                <div class="form__group">            
+                    <textarea name="message" rows="8" class="form__input" placeholder="Drop your message..."  required minlength="20"></textarea>
+                </div>
+                <button type="submit" class="form__button">Submit</button>  
+            </form>
+            <a href="#heading">Back to top &uarr;</a>
+        </div>
+        <script src="./script.js"></script>
+</body>
+</html>
